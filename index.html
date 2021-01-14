@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+    <script src="http://davidbau.com/encode/seedrandom.min.js"></script>
+    <script src="observable.js"></script>
+    <script src="user-interface.js"></script>
+    <script src="sketch.js"></script>
+    <script src="brain.js"></script>
+    <script src="game.js"></script>
+    <script src="ball.js"></script>
+    <script src="agent.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            max-height: max-content;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .scoreboard {
+            margin: 0 10px;
+            padding: 10px;
+            border: 1px dashed black;
+            width: 250px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scoreboard .title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .scoreboard .number {
+            margin: 25px 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scoreboard">
+        <span class="title">
+            Score
+        </span>
+        <span class="number">0</span>
+        <span class="title">
+            Balls missed
+        </span>
+        <span class="missed number">0</span>
+        <span class="title">
+            Average missed %
+        </span>
+        <span class="percent number"></span>
+        <span class="title">
+            Min number until now
+        </span>
+        <span class="percent-min number"></span>
+    </div>
+</body>
+
+</html>
